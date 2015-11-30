@@ -1,0 +1,4 @@
+bower_components
+app/js/*.min.js
+app/css/*.min.css
+app/fonts

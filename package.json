@@ -1,0 +1,21 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "angular app template",
+  "main": "app/js/app.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-server-livereload": "^1.5.4",
+    "gulp-ng-annotate": "^1.1.0",
+    "bower": "^1.6.8",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xhorn pan",
+  "license": "MIT"
+}

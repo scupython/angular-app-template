@@ -1,0 +1,14 @@
+<div ng-show="links" layout="row" layout-sm="column" layout-align="left center">
+    <md-button ng-disabled="!links.hasOwnProperty('first')" ng-click="load_link('first')">First</md-button>
+    <md-button ng-disabled="!links.hasOwnProperty('prev')" ng-click="load_link('prev')">Prev</md-button>
+    <span flex></span>
+    <md-input-container class="page">
+        <md-select ng-model="page.size" md-on-close="onclose()">
+            <md-option ng-repeat="size in page.sizes" value="{{size}}">{{size}}</md-option>
+        </md-select>
+    </md-input-container>
+    <span style="padding-top: 14px;">Page: {{page.pagination}} Total: {{page.total_count}}</span>
+    <span flex></span>
+    <md-button ng-disabled="!links.hasOwnProperty('next')" ng-click="load_link('next')">Next</md-button>
+    <md-button ng-disabled="!links.hasOwnProperty('last')" ng-click="load_link('last')">Last</md-button>
+</div>
